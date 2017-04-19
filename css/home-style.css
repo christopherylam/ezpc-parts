@@ -1,0 +1,135 @@
+*
+{
+	font-family: monospace;
+}
+
+#website-name
+{
+	text-align: center;
+}
+
+#nav-bar
+{
+	float: right;
+}
+
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(66,119,206);
+}
+
+li
+{
+	display: inline;
+}
+
+li a
+{
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+}
+
+li:hover
+{
+	background-color: rgb(164,166,168);
+}
+
+hr
+{
+	opacity: 0.7;
+	color: gray;
+	width: 90%;
+}
+
+.text-block
+{
+	margin-left: 11%;
+}
+
+#button
+{
+	width: 130px;
+	height: auto;
+	margin: auto;
+	background-color: rgb(66,119,206);
+	text-align: center;
+	font-size: 180%;
+	border: 1px solid black;
+}
+
+#start
+{
+	color: white;
+	text-decoration: none;
+}
+
+#footer
+{
+	text-align: center;
+	opacity: 0.7;
+	color: gray;
+	font-size: 80%;
+}
+
+#what-we-sell
+{
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+/*MOBILE PHONE VIEWPORT*/
+@media only screen and (max-width: 768px)
+{
+	#website-name
+	{
+		font-size: 300%;
+	}
+
+	img
+	{
+		margin-left: 10%;
+		width: 12%;
+		height: 12%;
+	}
+
+	li
+	{
+		font-size: 105%;
+	}
+}
+
+/*TABLET & DESKTOP VIEWPORT*/
+@media only screen and (min-width: 768px) 
+{
+	#website-name
+	{
+		font-size: 700%;
+	}
+
+	img
+	{
+		margin-left: 12%;
+		width: 10%;
+		height: 10%;
+	}
+
+	li
+	{
+		font-size: 200%;
+	}
+
+	.float-left
+	{
+		float: left;
+	}
+
+	.text-block
+	{
+		width: 20%;
+	}
+}
+
