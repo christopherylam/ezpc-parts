@@ -1,0 +1,234 @@
+*
+{
+	font-family: monospace;
+}
+
+.float-left
+{
+	float: left;
+}
+
+#back-button
+{
+	text-decoration: none;
+}
+
+.section
+{
+	margin-left: 2%;
+	background-color: rgba(201, 208, 219, 0.3);
+	width: 45%;
+}
+
+#confirmation
+{
+	margin: 0 auto;
+	width: 400px;
+}
+
+.section-header
+{
+	background-color: rgb(96, 97, 99);
+	color: white;
+}
+
+.display
+{
+	display: inline-block;
+}
+
+#product-name, #product-price
+{
+	text-align: center;
+}
+
+.error.active
+{
+	background-color: red;
+}
+
+
+input:invalid
+{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid 
+{
+  outline: none;
+}
+
+
+/*MOBILE PHONE VIEWPORT*/
+@media only screen and (max-width: 768px)
+{
+	#back-arrow
+	{
+		margin-left: 0.7%;
+		margin-bottom: 5%;
+		width: 10%;
+		height: 10%;
+	}
+
+	#shopping-cart
+	{
+		margin-left: 2%;
+		margin-right: 2%;
+		width: 12%;
+		height: 12%;
+	}
+
+	hr
+	{
+		opacity: 0.7;
+		width: 75%;
+		margin-left: 2%;
+	}
+
+	.section
+	{
+		width: 95%;
+	}
+
+	#product-image
+	{
+		width: 55%;
+		height: 55%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	#purchase-button
+	{	
+		margin-right: 2%;
+	}
+
+	#purchase-button, #cancel-button
+	{
+		font-size: 90%;
+		padding: 10px;
+		color: darkblue;
+	}
+
+	.left-element, .display
+	{
+		margin-left: 5%;
+	}
+
+	.display select
+	{
+		width: 60%;
+	}
+
+	.country
+	{
+		padding-bottom: 5%;
+	}
+}
+
+/*TABLET & DESKTOP VIEWPORT*/
+@media only screen and (min-width: 768px) 
+{
+	hr
+	{
+		opacity: 0.7;
+		width: 40%;
+		margin-left: 2%;
+	}
+
+	#back-arrow
+	{
+		margin-left: 0.7%;
+		margin-bottom: 2%;
+		width: 4%;
+		height: 4%;
+	}
+
+	#shopping-cart
+	{
+		margin-left: 2%;
+		margin-right: 2%;
+		width: 3%;
+		height: 3%;
+	}
+
+	*:not(#checkout)
+	{
+		font-size: 106%;
+	}
+
+	#product-order
+	{
+		float: right;
+		margin-right: 5%;
+		margin-top: 1%;
+	}
+
+	.section-title
+	{
+		padding-left: 2%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 120%;
+	}
+
+	.left-element, .error
+	{
+		margin-left: 7%;
+		margin-right: 20%;
+	}
+
+	#user-address input
+	{
+		width: 97%;
+	}
+
+	.display
+	{
+		width: 20%;
+		font-size: 15%;
+	}
+
+	.display input, select
+	{
+		width: 150%;
+	}
+
+	#product-image
+	{
+		width: 50%;
+		height: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	#product-description
+	{
+		margin-left: 30%;
+	}
+
+	.card-menu
+	{
+		display: inline-block;
+		width: 70px;
+	}
+
+	#CCV
+	{
+		width: 50px;
+	}
+
+	#purchase-button
+	{	
+		margin-right: 2%;
+	}
+
+	#purchase-button, #cancel-button
+	{
+		font-size: 200%;
+		padding: 20px;
+		color: darkblue;
+	}
+
+}
