@@ -26,9 +26,9 @@
 
 		<hr align="left">
 
-		<span class="error" aria-live="polite"></span>
+		<span style="display:none;" id="error-message" aria-live="polite">PLEASE FILL IN THE REQUIRED FIELDS.</span>
 
-		<form method="post" action="mailto:123@gmail.com?Subject=YourOrder">
+		<form name="order-checkout" onSubmit="return (validateForm())" method="post" action="mailto:123@gmail.com?Subject=YourOrder">
 
 			<div class="section" id="product-order">
 				<div class="section-header">
@@ -48,11 +48,12 @@
 				<div class="left-element" id="product-input">
 					<p>Product ID: <input type="number" min="0" id="product-id" name="product-id" /></p>
 					<p>Quantity: <input type="number" min="0" id="quantity" name="quantity" /></p>
+					<button onclick="calculateTotal(document.getElementById('quantity').value)">Calculate Price</button>
 				</div>
-				<div class="left-element" id=calculate-order>
-					<p><b>Order Total: </b></p>
-					<p><b>Tax: </b></p><br>
-					<p><b>Grand Total: </b></p><br>
+				<div class="left-element" id="calculate-order" style="display:none;">
+					<p><b  id="order-total">Order Total: </b></p>
+					<p id="tax"><b>Tax: </b></p>
+					<p id="grand-total"><b>Grand Total: </b></p><br>
 				</div>
 			</div>
 
@@ -73,11 +74,11 @@
 				<br />
 				<div class="display left-element">
 					<p>Email Address</p> 
-					<input type="email" id="email" name="email" />
+					<input type="email" id="email" name="email" placeholder="peter@uci.edu" />
 				</div>
 				<div class="display">
 					<p>Phone Number</p>
-					<input type="tel" id="telephone" name="telephone" />
+					<input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" id="telephone" name="telephone" placeholder="XXX-XXX-XXXX" />
 				</div>
 				<br />
 				<div id="user-address" class="left-element">
@@ -149,7 +150,7 @@
 				<br />
 				<div style="padding-bottom: 5%;" class="display left-element">
 					<p>Zip/Postal Code</p>
-					<input type="number" id="postal-code" name="postal-code" />
+					<input type="number" id="postal-code" name="postal-code" maxlength="5" />
 				</div>
 				<div class="display country">
 					<p>Country</p>
@@ -416,11 +417,12 @@
 				</div>
 				<div class="display left-element">
 					<p>Card Number</p>
-					<input type="number" max="19" id="card-number" name="card-number" />
+					<input type="number" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" />
 				</div>
 				<div class="display">
 					<p>Expiration</p>
-					<select class="card-menu">
+					<select id="expiration-month" class="card-menu">
+						<option disabled selected value></option>
 						<option value="1">01</option>
 						<option value="2">02</option>
 						<option value="3">03</option>
@@ -434,15 +436,16 @@
 						<option value="11">11</option>
 						<option value="12">12</option>
 					</select>
-					<select class="card-menu">
-						<option value="  " selected>2017</option>
+					<select id="expiration-year" class="card-menu">
+						<option disabled selected value></option>
+						<option value="2017">2017</option>
 						<option value="2018">2018</option> 
 						<option value="AL">2019</option> 
 					</select>
 				</div>
 				<div style="margin-left: 4%;padding-bottom: 5%;" class="display">
 					<p>CCV</p> 
-					<input type="number" id="CCV" name="CCV" max="3" min="3" />
+					<input type="number" id="CCV" name="CCV" maxlength="3" />
 				</div>
 			</div>
 
@@ -454,7 +457,7 @@
 				</div>
 				<div class="left-element">
 					<p>Shipping Method</p>
-					<input type="radio" name="overnight" value="overnight" checked>Overnight <br>
+					<input type="radio" name="overnight" value="overnight">Overnight <br>
 					<input type="radio" name="2-days-expedited" value="2-days-2xpedited">2-days Expedited <br>
 					<input type="radio" name="6-days-expedited" value="6-days-2xpedited">6-days Ground
 				</div>
@@ -798,7 +801,5 @@
 			</div>
 
 		</form>
-
-
 	</body>
 </html>

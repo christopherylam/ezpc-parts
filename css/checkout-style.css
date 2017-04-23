@@ -42,23 +42,28 @@
 	text-align: center;
 }
 
-.error.active
-{
-	background-color: red;
-}
-
-
-input:invalid
+.error
 {
   border-color: #900;
   background-color: #FDD;
 }
 
-input:focus:invalid 
+.error:focus 
 {
-  outline: none;
+  background-color: default;
 }
 
+#product-input
+{
+	padding-bottom: 5%;
+}
+
+span
+{
+	color: red;
+	border-color: #900;
+	background-color: #FDD;	
+}
 
 /*MOBILE PHONE VIEWPORT*/
 @media only screen and (max-width: 768px)
@@ -125,6 +130,13 @@ input:focus:invalid
 	{
 		padding-bottom: 5%;
 	}
+
+	#error-message
+	{
+		margin-left: 2%;
+		width: 90%;
+		padding: 0.5%;
+  	}
 }
 
 /*TABLET & DESKTOP VIEWPORT*/
@@ -230,5 +242,12 @@ input:focus:invalid
 		padding: 20px;
 		color: darkblue;
 	}
+
+	#error-message
+	{
+		margin-left: 5%;
+		width: 15%;
+		padding: 0.5%;
+  	}
 
 }
