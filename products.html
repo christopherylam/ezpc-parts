@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Products</title>
+		<!--Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 		<!-- animate.css -->
 		<link rel="stylesheet" href="css/animate.css" />
 		<!-- css for products page -->
@@ -13,21 +15,113 @@
 		<!-- jquery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!-- custom.js -->
-		<script src="js/custom.js"></script>
+		<script src="js/products.js"></script>
 	</head>
-	<div>
-		<div id="nav-bar">
-			<div id="logo">
-				<b><h1>EZPC Parts</h1></b>
+	<body>
+		<div>
+			<div id="nav-bar">
+				<div id="logo">
+					<b><a href="index.html"><h1>EZPC Parts</h1></a></b>
+				</div>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>	
+			<div>
+				<h1 id="title">Our Products</h1>
 			</div>
-			<ul>
-				<li><a href="about.html">About</a></li>
-				<li><a href="products.html">Products</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>			
-		<img src="img/mouse.png" />
-		<img src="img/keyboard.png" />
-		<img src="img/monitor.png" />
-		<img src="img/case.png" />
-	</div>
+			<hr>
+			<div id="pc-icons">		
+				<img src="img/mouse.jpg" />
+				<img src="img/keyboard.jpg" />
+				<img src="img/monitor.jpg" />
+				<img src="img/case.jpg" />
+			</div>
+			<hr>
+			<div id="products-table-wrapper">
+				<table id="products-table">
+					<tr>
+				    	<th>Product ID (PID)</th>
+				    	<th>Item</th>
+				    	<th>Category</th>
+				    	<th>Brand</th>
+				    	<th>Price</th>
+					</tr>
+					<tr>
+				    	<td>01</td>
+				    	<td><img src="img/gtx1080.jpg"/><p>GeForce GTX 1080 FTW GAMING</p></td>
+				    	<td>GPU</td>
+				    	<td>EVGA</td>
+				    	<td>$559.99</td>
+				 	</tr>
+				 	<tr>
+				    	<td>02</td>
+				    	<td><img src="img/gtx1070.jpg"/><p>GeForce GTX 1070 FTW GAMING</p></td>
+				    	<td>GPU</td>
+				    	<td>EVGA</td>
+				    	<td>$439.99</td>
+				 	</tr>
+				 	<tr>
+				    	<td>03</td>
+				    	<td><img src="img/4690k.jpg"/><p>Intel&reg; Core&trade; i5-4690K Processor</p></td>
+				    	<td>CPU</td>
+				    	<td>Intel</td>
+				    	<td>$271.12</td>
+				 	</tr>
+				 	<tr>
+				    	<td>04</td>
+				    	<td><img src="img/4790k.jpg"/><p>Intel&reg; Core&trade; i7-4790K Processor</p></td>
+				    	<td>CPU</td>
+				    	<td>Intel</td>
+				    	<td>$397.19</td>
+				 	</tr>
+				 	<tr>
+				    	<td>05</td>
+				    	<td><img src="img/sabre.png"/><p>Sabre RGB</p></td>
+				    	<td>Corsair</td>
+				    	<td>Mouse</td>
+				    	<td>$49.99</td>
+				 	</tr>
+				 	<tr>
+				    	<td>06</td>
+				    	<td><img src="img/g502.jpg"/><p>G502 Proteus Spectrum</p></td>
+				    	<td>Logitech</td>
+				    	<td>Mouse</td>
+				    	<td>$59.99</td>
+				 	</tr>
+				 	<tr>
+				    	<td>07</td>
+				    	<td><img src="img/blackwidow.png"/><p>Razer Blackwidow Chroma V2</p></td>
+				    	<td>Razer</td>
+				    	<td>Keyboard</td>
+				    	<td>$169.99</td>
+				 	</tr>
+				 	<tr>
+				    	<td>08</td>
+				    	<td><img src="img/strafe.png"/><p>Corsair Strafe</p></td>
+				    	<td>Corsair/td>
+				    	<td>Keyboard</td>
+				    	<td>$89.99</td>
+				 	</tr>
+				 	<tr>
+				    	<td>09</td>
+				    	<td><img src="img/h440.png"/><p>H440</p></td>
+				    	<td>NZXT</td>
+				    	<td>Case</td>
+				    	<td>$114.99</td>
+				 	</tr>
+				 	<tr>
+				    	<td>10</td>
+				    	<td><img src="img/view27.jpg"/><p>View 27</p></td>
+				    	<td>Thermaltake</td>
+				    	<td>Case</td>
+				    	<td>$69.99</td>
+				 	</tr>
+				</table>
+			</div>
+		</div>
+		<hr>
+		<p id="footer">© EZPC Parts 2017</p>
+	</body>
