@@ -1,0 +1,26 @@
+hr
+{
+	opacity: 0.7;
+	color: gray;
+	width: 90%;
+	margin-top: 0;
+}
+
+#title
+{
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 3em;
+}
+
+#product-img{
+	float: left;
+}
+
+#product-description{
+	float:right;
+}
+
+#product-img img{
+	width: 40%;
+}
