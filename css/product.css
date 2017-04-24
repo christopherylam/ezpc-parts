@@ -15,12 +15,42 @@ hr
 
 #product-img{
 	float: left;
+	margin-left: 5em;
+	width: 40%;
 }
 
 #product-description{
 	float:right;
+	margin-right: 5em;
+	width:40%;
+}
+
+#product-description p{
+	padding:1em;
+}
+
+#product-description h2{
+	margin:0 auto;
+	text-align: center;
+}
+
+#checkout-button{
+	margin-top: 3em;
+}
+
+#checkout-button a{
+	color: black;
+	text-decoration: none;
+}
+
+#checkout-button h2{
+	padding:0.5em;
+	margin:0 auto;
+	text-align: center;
+	width: 25%;
+	border:2px solid navy;
 }
 
 #product-img img{
-	width: 40%;
+	width: 100%;
 }
