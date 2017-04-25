@@ -20,51 +20,62 @@ function getProduct(productID)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/gtx1080.jpg" /><h3 id="product-name">' + productArray[1][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[1][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 559.99)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 2)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/gtx1070.jpg" /><h3 id="product-name">' + productArray[2][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[2][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 439.99)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 3)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/4690k.jpg" /><h3 id="product-name">' + productArray[3][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[3][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 271.12)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 4)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/4790k.jpg" /><h3 id="product-name">' + productArray[4][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[4][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 397.19)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 5)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/sabre.png" /><h3 id="product-name">' + productArray[5][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[5][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 49.99)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 6)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/g502.jpg" /><h3 id="product-name">' + productArray[6][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[6][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 59.99)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 7)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/blackwidow.png" /><h3 id="product-name">' + productArray[7][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[7][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 169.99)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 8)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/strafe.png" /><h3 id="product-name">' + productArray[8][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[8][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 89.99)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 9)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/h440.png" /><h3 id="product-name">' + productArray[9][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[9][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 114.99)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 		if(pid == productID && productID == 10)
 		{
 			var productDiv = document.getElementById("product");
 			productDiv.innerHTML = '<img id="product-image" src="img/view27.jpg" /><h3 id="product-name">' + productArray[10][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[10][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 69.99)">Calculate Price</button>';
+			document.getElementById("product-break").style.display = "block";
 		}
 	}
 	document.getElementById("product").style.display = "block";

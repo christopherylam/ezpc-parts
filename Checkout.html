@@ -22,9 +22,10 @@
 			</div>
 			<ul>
 				<li><a href="../products.html">Products</a></li>
-				<li><a href="../about.html">About Us</a></li>
+				<li><a href="../About.html">About Us</a></li>
 			</ul>
 		</div>
+		<br /><br />
 		<a id="back-button" href="products.html">
 			<img id="back-arrow" src="img/back-arrow.png" />
 		</a>
@@ -36,7 +37,9 @@
 
 		<hr align="left">
 
-		<span style="display:none;" id="error-message" aria-live="polite">PLEASE FILL IN / CORRECT THE REQUIRED FIELDS.</span>
+		<br />
+
+		<span id="error-message">PLEASE FILL IN / CORRECT THE REQUIRED FIELDS.</span>
 
 		<form id="order-checkout" name="order-checkout" onSubmit="return (validateForm())" method="post" enctype="text/plain">
 
@@ -47,14 +50,13 @@
 				<div id="product" style="display:none;">
 					<!-- PRODUCT IMAGE, HEADER, DESCRIPTION, QUANTITY DYNAMICALLY ADDED HERE -->
 				</div>
-				<br />
+				<br style="display:none;" id="product-break" />
 				<div class="left-element" id="calculate-order" style="display:none;">
 					<p id="order-total">Order Total: </p>
 					<p id="tax"><b>Tax: </b></p>
 					<p id="shipping-rate">Shipping: </p>
 					<b><p id="grand-total">Grand Total: </p></b><br>
 				</div>
-				<br />
 				<div class="left-element" id="product-input">
 					<p>Product ID: <input type="text" id="product-id" name="product-id" maxlength="2"></p>
 					<button onclick="getProduct(document.getElementById('product-id').value)">Search</button>
@@ -800,11 +802,12 @@
 
 			<div id="confirmation">
 				<input id="purchase-button" class="float-left" type="submit" value="PURCHASE" />
-				<a id="cancel" href="Product.html">
+				<a id="cancel" href="products.html">
 					<button id="cancel-button">CANCEL</button>
 				</a>
 			</div>
 
 		</form>
+		<br /><br />
 	</body>
 </html>
