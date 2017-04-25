@@ -21,6 +21,7 @@ hr
 }
 
 .text-block{
+	vertical-align: top;
 	display: inline-block;
 	margin: 0 2em;
 	width: 23%;
