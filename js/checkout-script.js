@@ -287,7 +287,7 @@ function validateForm()
 action="mailto:?Subject=Your EZPC Parts Order"
 	if(isValid == true)
 	{
-		document.getElementById("order-checkout").setAttribute("action", "mailto:" + email + "?Subject=Your EZPC Parts Order?First Name=" + firstName);
+		document.getElementById("order-checkout").setAttribute("action", "mailto:" + email.value + "?Subject=Your EZPC Parts Order");
 	}
 
 	return isValid;
