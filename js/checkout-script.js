@@ -122,6 +122,7 @@ function validateForm()
 	var shippingState = document.getElementById("shipping-state");
 	var shippingCountry = document.getElementById("shipping-country");
 	var shippingPostalCode = document.getElementById("shipping-postal-code");
+	var productID = document.getElementById("product-id")
 
 	var isValid = true;
 
@@ -283,11 +284,20 @@ function validateForm()
 	{
 		shippingPostalCode.classList.remove("error");
 	}
+	if(productID == "")
+	{
+		productID.classList.add("error");
+	}
+	else
+	{
+		productID.classList.remove("error");
+	}
 
-action="mailto:?Subject=Your EZPC Parts Order"
+
 	if(isValid == true)
 	{
-		document.getElementById("order-checkout").setAttribute("action", "mailto:" + email.value + "?Subject=Your EZPC Parts Order");
+		body = "EVGA GEForce 1070";
+		document.getElementById("order-checkout").setAttribute("action", "mailto:" + email.value + "?Subject=Your EZPC Parts Order&body=" + body);
 	}
 
 	return isValid;
