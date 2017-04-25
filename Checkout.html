@@ -59,7 +59,7 @@
 				</div>
 				<div class="left-element" id="product-input">
 					<p>Product ID: <input type="text" id="product-id" name="product-id" maxlength="2"></p>
-					<button onclick="getProduct(document.getElementById('product-id').value)">Search</button>
+					<button type="button" onclick="getProduct(document.getElementById('product-id').value)">Search</button>
 				</div>
 			</div>
 
@@ -425,11 +425,11 @@
 					<p>Card Number</p>
 					<input type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" />
 				</div>
-				<div class="display">
+				<br />
+				<div id="card-expiration" class="display left-element">
 					<p>Expiration</p>
 					<select id="expiration-month" class="card-menu">
-						<option disabled selected value></option>
-						<option value="1">01</option>
+						<option value="1" selected>01</option>
 						<option value="2">02</option>
 						<option value="3">03</option>
 						<option value="4">04</option>
@@ -443,8 +443,7 @@
 						<option value="12">12</option>
 					</select>
 					<select id="expiration-year" class="card-menu">
-						<option disabled selected value></option>
-						<option value="2017">2017</option>
+						<option value="2017" selected>2017</option>
 						<option value="2018">2018</option> 
 						<option value="2019">2019</option> 
 						<option value="2020">2020</option>
@@ -803,7 +802,7 @@
 			<div id="confirmation">
 				<input id="purchase-button" class="float-left" type="submit" value="PURCHASE" />
 				<a id="cancel" href="products.html">
-					<button id="cancel-button">CANCEL</button>
+					<button type="button" id="cancel-button">CANCEL</button>
 				</a>
 			</div>
 
