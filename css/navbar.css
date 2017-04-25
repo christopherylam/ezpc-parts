@@ -30,14 +30,11 @@ html, body{
 
 #nav-bar
 {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+100;Grey+3D+%232 */
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
-background: rgb(181,189,200); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+	background: rgb(181,189,200); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	display: inline-block;
 	width: 100%;
 }
@@ -117,23 +114,30 @@ li{
 /*MOBILE PHONE VIEWPORT*/
 @media only screen and (max-width: 768px)
 {
+	#logo{
+		width: 100%;
+		margin:0 auto;
+
+	}
+
 	#logo h1
 	{
+		text-align: center;
 		font-size: 2.5em;
 		margin:0;
 	}
 
-	/*img
-	{
-		margin-left: 10%;
-		width: 12%;
-		height: 12%;
-	}*/
+	#nav-bar ul{
+		float:none;
+		text-align: center;
+		margin: 0 auto;
+	}
 
 	li
 	{
 		font-size: 1.5em;
 	}
+
 }
 
 /*TABLET & DESKTOP VIEWPORT*/

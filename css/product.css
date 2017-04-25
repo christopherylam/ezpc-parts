@@ -55,3 +55,41 @@ hr
 #product-img img{
 	width: 100%;
 }
+
+/*MOBILE PHONE VIEWPORT*/
+@media only screen and (max-width: 768px){
+	#title{
+		font-size:2em;
+	}
+
+	#product-img, #product-description{
+		text-align: center;
+		margin:0;
+		width: 100%;
+	}
+
+	#product-img img{
+		width: 40%;
+	}
+
+	#product-description p{
+		width: 90%;
+		margin:0 auto;
+	}
+
+	#product-description h2{
+		font-size: 1.2em;
+		margin:0 auto;
+		text-align: center;
+	}
+
+	#checkout-button h2{
+		font-size: 1.25em;
+		padding:0.5em;
+		margin:0 auto;
+		text-align: center;
+		width: 25%;
+		border:2px solid navy;
+	}
+
+}
