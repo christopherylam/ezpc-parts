@@ -15,7 +15,7 @@
 	</head>
 	<body>
 
-		<a id="back-button" href="Product.html">
+		<a id="back-button" href="products.html">
 			<img id="back-arrow" src="img/back-arrow.png" />
 		</a>
 
@@ -26,7 +26,7 @@
 
 		<hr align="left">
 
-		<span style="display:none;" id="error-message" aria-live="polite">PLEASE FILL IN THE REQUIRED FIELDS.</span>
+		<span style="display:none;" id="error-message" aria-live="polite">PLEASE FILL IN / CORRECT THE REQUIRED FIELDS.</span>
 
 		<form id="order-checkout" name="order-checkout" onSubmit="return (validateForm())" method="post" enctype="text/plain">
 
@@ -39,15 +39,15 @@
 				</div>
 				<br />
 				<div class="left-element" id="calculate-order" style="display:none;">
-					<p><b  id="order-total">Order Total: </b></p>
+					<p id="order-total">Order Total: </p>
 					<p id="tax"><b>Tax: </b></p>
-					<p id="shipping-rate"><b>Shipping: </b></p>
-					<p id="grand-total"><b>Grand Total: </b></p><br>
+					<p id="shipping-rate">Shipping: </p>
+					<b><p id="grand-total">Grand Total: </p></b><br>
 				</div>
 				<br />
 				<div class="left-element" id="product-input">
-					<p>Product ID: <input type="text" id="product-id" name="product-id" /></p>
-					<button onclick="getProduct(document.getElementById('product-id').value)">Get Product</button>
+					<p>Product ID: <input type="text" id="product-id" name="product-id" maxlength="2"></p>
+					<button onclick="getProduct(document.getElementById('product-id').value)">Search</button>
 				</div>
 			</div>
 
@@ -144,7 +144,7 @@
 				<br />
 				<div style="padding-bottom: 5%;" class="display left-element">
 					<p>Zip/Postal Code</p>
-					<input type="number" id="postal-code" name="postal-code" maxlength="5" />
+					<input type="number" id="postal-code" name="postal-code" maxlength="5">
 				</div>
 				<div class="display country">
 					<p>Country</p>
@@ -434,12 +434,13 @@
 						<option disabled selected value></option>
 						<option value="2017">2017</option>
 						<option value="2018">2018</option> 
-						<option value="AL">2019</option> 
+						<option value="2019">2019</option> 
+						<option value="2020">2020</option>
 					</select>
 				</div>
 				<div style="margin-left: 4%;padding-bottom: 5%;" class="display">
 					<p>CCV</p> 
-					<input type="number" id="CCV" name="CCV" maxlength="3" />
+					<input type="number" id="CCV" name="CCV" maxlength="3">
 				</div>
 			</div>
 
@@ -526,7 +527,7 @@
 				<br />
 				<div style="padding-bottom: 5%;" class="display left-element">
 					<p>Zip/Postal Code</p>
-					<input type="number" id="shipping-postal-code" name="postal-code" />
+					<input type="number" id="shipping-postal-code" name="postal-code" maxlength="5">
 				</div>
 				<div class="country display">
 					<p>Country</p>

@@ -137,6 +137,11 @@ span
 		width: 90%;
 		padding: 0.5%;
   	}
+
+  	#product-id, #quantity
+  	{
+  		width: 40%;
+  	}
 }
 
 /*TABLET & DESKTOP VIEWPORT*/
@@ -248,6 +253,11 @@ span
 		margin-left: 5%;
 		width: 15%;
 		padding: 0.5%;
+  	}
+
+  	#product-id, #quantity
+  	{
+  		width: 10%;
   	}
 
 }

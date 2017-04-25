@@ -1,5 +1,6 @@
 function getProduct(productID)
 {
+
 	var productArray = {
 	1: ["GeForce GTX 1080 FTW GAMING", 559.99],
 	2: ["GeForce GTX 1070 FTW GAMING", 439.99],
@@ -18,52 +19,52 @@ function getProduct(productID)
 		if(pid == productID && productID == 1)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/gtx1080.jpg" /><h3 id="product-name">' + productArray[1][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[1][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 559.99)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/gtx1080.jpg" /><h3 id="product-name">' + productArray[1][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[1][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 559.99)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 2)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/gtx1070.jpg" /><h3 id="product-name">' + productArray[2][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[2][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 439.99)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/gtx1070.jpg" /><h3 id="product-name">' + productArray[2][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[2][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 439.99)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 3)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/4690k.jpg" /><h3 id="product-name">' + productArray[3][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[3][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 271.12)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/4690k.jpg" /><h3 id="product-name">' + productArray[3][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[3][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 271.12)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 4)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/4790k.jpg" /><h3 id="product-name">' + productArray[4][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[4][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 397.19)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/4790k.jpg" /><h3 id="product-name">' + productArray[4][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[4][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 397.19)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 5)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/sabre.png" /><h3 id="product-name">' + productArray[5][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[5][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 49.99)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/sabre.png" /><h3 id="product-name">' + productArray[5][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[5][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 49.99)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 6)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/g502.jpg" /><h3 id="product-name">' + productArray[6][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[6][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 59.99)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/g502.jpg" /><h3 id="product-name">' + productArray[6][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[6][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 59.99)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 7)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/blackwidow.png" /><h3 id="product-name">' + productArray[7][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[7][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 169.99)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/blackwidow.png" /><h3 id="product-name">' + productArray[7][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[7][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 169.99)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 8)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/strafe.png" /><h3 id="product-name">' + productArray[8][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[8][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 89.99)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/strafe.png" /><h3 id="product-name">' + productArray[8][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[8][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 89.99)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 9)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/h440.png" /><h3 id="product-name">' + productArray[9][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[9][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 114.99)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/h440.png" /><h3 id="product-name">' + productArray[9][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[9][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 114.99)">Calculate Price</button>';
 		}
 		if(pid == productID && productID == 10)
 		{
 			var productDiv = document.getElementById("product");
-			productDiv.innerHTML = '<img id="product-image" src="img/view27.jpg" /><h3 id="product-name">' + productArray[10][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[10][1] + '</p><p class="left-element">Quantity: <input type="number" min="0" max=10" id="quantity" name="quantity" /></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 69.99)">Calculate Price</button>';
+			productDiv.innerHTML = '<img id="product-image" src="img/view27.jpg" /><h3 id="product-name">' + productArray[10][0] + '</h3><p id="product-price"><b>Price: </b>$' + productArray[10][1] + '</p><p class="left-element">Quantity: <input type="number" id="quantity" name="quantity" maxlength="2"></p><button class="left-element" onclick="calculateTotal(document.getElementById(\'quantity\').value, 69.99)">Calculate Price</button>';
 		}
 	}
 	document.getElementById("product").style.display = "block";
@@ -91,11 +92,9 @@ function calculateTotal(quantity, price)
 		return;
 	}
 	var tax = (quantity * price) * 0.15;
-	tax.toFixed(2);
 	var total = (quantity * price) + tax + parseInt(shippingOption);
-	total.toFixed(2);
-	document.getElementById("order-total").innerHTML = "Order Total: $".concat(quantity * price);
-	document.getElementById("tax").innerHTML = "Tax: $".concat(tax);
+	document.getElementById("order-total").innerHTML = "Order Total: $".concat((quantity * price).toFixed(2));
+	document.getElementById("tax").innerHTML = "Tax: $".concat(tax.toFixed(2));
 	document.getElementById("shipping-rate").innerHTML = "Shipping: $".concat(parseInt(shippingOption));
 	document.getElementById("grand-total").innerHTML = "Grand Total: $".concat(total.toFixed(2));
 	document.getElementById("calculate-order").style.display = "block";
@@ -122,7 +121,19 @@ function validateForm()
 	var shippingState = document.getElementById("shipping-state");
 	var shippingCountry = document.getElementById("shipping-country");
 	var shippingPostalCode = document.getElementById("shipping-postal-code");
-	var productID = document.getElementById("product-id")
+	var productID = document.getElementById("product-id");
+	if(productID.value != "")
+	{
+		var productQuantity = document.getElementById("quantity");
+		if(productQuantity.value == "")
+		{
+			productQuantity.classList.add("error");
+		}
+		else
+		{
+			productQuantity.classList.remove("error");
+		}
+	}
 
 	var isValid = true;
 
@@ -284,7 +295,7 @@ function validateForm()
 	{
 		shippingPostalCode.classList.remove("error");
 	}
-	if(productID == "")
+	if(productID.value == "")
 	{
 		productID.classList.add("error");
 	}
@@ -292,7 +303,6 @@ function validateForm()
 	{
 		productID.classList.remove("error");
 	}
-
 
 	if(isValid == true)
 	{
