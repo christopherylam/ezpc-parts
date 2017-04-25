@@ -28,32 +28,26 @@
 
 		<span style="display:none;" id="error-message" aria-live="polite">PLEASE FILL IN THE REQUIRED FIELDS.</span>
 
-		<form name="order-checkout" onSubmit="return (validateForm())" method="post" action="mailto:123@gmail.com?Subject=YourOrder">
+		<form id="order-checkout" name="order-checkout" onSubmit="return (validateForm())" method="post">
 
 			<div class="section" id="product-order">
 				<div class="section-header">
 					<h2 class="section-title">YOUR ORDER</h2>
 				</div>
-				<div id="product">
-					<img id="product-image" src="img/corsairk95.png" />
-					<h3 id="product-name">Corsair K95 RGB Platinum Mechanical Gaming Keyboard</h3>
-					<p id="product-price"><b>Price:</b> $150</p>
-					<ul id="product-description">
-						<li><b>Weight:</b> 1.3324kg</li>
-						<li><b>Key Switches:</b> Cherry MX RGB Brown</li>
-						<li><b>Keyboard Backlighting:</b> RGB</li>
-					</ul>
+				<div id="product" style="display:none;">
+					<!-- PRODUCT IMAGE, HEADER, DESCRIPTION, QUANTITY DYNAMICALLY ADDED HERE -->
 				</div>
 				<br />
-				<div class="left-element" id="product-input">
-					<p>Product ID: <input type="number" min="0" id="product-id" name="product-id" /></p>
-					<p>Quantity: <input type="number" min="0" id="quantity" name="quantity" /></p>
-					<button onclick="calculateTotal(document.getElementById('quantity').value)">Calculate Price</button>
-				</div>
 				<div class="left-element" id="calculate-order" style="display:none;">
 					<p><b  id="order-total">Order Total: </b></p>
 					<p id="tax"><b>Tax: </b></p>
+					<p id="shipping-rate"><b>Shipping: </b></p>
 					<p id="grand-total"><b>Grand Total: </b></p><br>
+				</div>
+				<br />
+				<div class="left-element" id="product-input">
+					<p>Product ID: <input type="text" id="product-id" name="product-id" /></p>
+					<button onclick="getProduct(document.getElementById('product-id').value)">Get Product</button>
 				</div>
 			</div>
 
@@ -88,7 +82,7 @@
 				<br />
 				<div class="display left-element">
 					<p>City</p>
-					<input type="number" id="city" name="city" />
+					<input type="text" id="city" name="city" />
 				</div>
 				<div class="display">
 					<p>State</p>
@@ -417,7 +411,7 @@
 				</div>
 				<div class="display left-element">
 					<p>Card Number</p>
-					<input type="number" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" />
+					<input type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" />
 				</div>
 				<div class="display">
 					<p>Expiration</p>
@@ -455,26 +449,26 @@
 				<div class="section-header">
 					<h2 class="section-title">SHIPPING DETAILS</h2>
 				</div>
-				<div class="left-element">
+				<div id="shipping-options" class="left-element">
 					<p>Shipping Method</p>
-					<input type="radio" name="overnight" value="overnight">Overnight <br>
-					<input type="radio" name="2-days-expedited" value="2-days-2xpedited">2-days Expedited <br>
-					<input type="radio" name="6-days-expedited" value="6-days-2xpedited">6-days Ground
+					<input type="radio" name="option" value="10">Overnight ($10)<br>
+					<input type="radio" name="option" value="5">2-days Expedited ($5)<br>
+					<input type="radio" name="option" value="0">6-days Ground (FREE)
 				</div>
 				<br />
 				<u><h2 class="left-element">Shipping Address</h2></u>
 				<div id="user-address" class="left-element">
 					<p>Address</p>
-					<input type="text" id="address" name="address" />
+					<input type="text" id="shipping-address" name="shipping-address" />
 				</div>
 				<br />
 				<div class="display left-element">
 					<p>City</p>
-					<input type="number" id="city" name="city" />
+					<input type="text" id="shipping-city" name="shipping-city" />
 				</div>
 				<div class="display">
 					<p>State</p>
-					<select>
+					<select id="shipping-state">
 						<option disabled selected value></option>
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
@@ -532,11 +526,11 @@
 				<br />
 				<div style="padding-bottom: 5%;" class="display left-element">
 					<p>Zip/Postal Code</p>
-					<input type="number" id="postal-code" name="postal-code" />
+					<input type="number" id="shipping-postal-code" name="postal-code" />
 				</div>
 				<div class="country display">
 					<p>Country</p>
-					<select>
+					<select id="shipping-country">
 						<option value="AF">Afghanistan</option>
 						<option value="AX">Åland Islands</option>
 						<option value="AL">Albania</option>
